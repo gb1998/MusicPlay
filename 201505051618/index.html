@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>jQuery产品图片360度旋转预览插件|DEMO_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+  	<link href="css/page.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.js"></script>
+  	<![endif]-->
+</head>
+<body>
+	<div class="htmleaf-container">
+		<header class="htmleaf-header">
+			<h1>jQuery产品图片360度旋转预览插件 <span>A jQuery plugin animation rotation via scroll, mouse and touch events</span></h1>
+			<div class="htmleaf-links">
+				<a class="htmleaf-icon icon-htmleaf-home-outline" href="http://www.htmleaf.com/" title="jQuery之家" target="_blank"><span> jQuery之家</span></a>
+				<a class="htmleaf-icon icon-htmleaf-arrow-forward-outline" href="http://www.htmleaf.com/jQuery/Image-Effects/201505051781.html" title="返回下载页" target="_blank"><span> 返回下载页</span></a>
+			</div>
+		</header>
+		<div class="container pb30">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
+					<div class="panel panel-default">
+			          <div class="panel-body">
+			            <div id="circlr">
+			              <img data-src="picture/00.jpg">
+			              <img data-src="picture/01.jpg">
+			              <img data-src="picture/02.jpg">
+			              <img data-src="picture/03.jpg">
+			              <img data-src="picture/04.jpg">
+			              <img data-src="picture/05.jpg">
+			              <img data-src="picture/06.jpg">
+			              <img data-src="picture/07.jpg">
+			              <img data-src="picture/08.jpg">
+			              <img data-src="picture/09.jpg">
+			              <img data-src="picture/10.jpg">
+			              <img data-src="picture/11.jpg">
+			              <img data-src="picture/12.jpg">
+			              <img data-src="picture/13.jpg">
+			              <img data-src="picture/14.jpg">
+			              <img data-src="picture/15.jpg">
+			              <div id="loader"></div>
+			            </div>
+			          </div>
+			        </div>
+			        <div class="col-sm-3 text-center">
+			          <h4>循环</h4>
+			          <p>
+			            <div class="btn-group" data-toggle="buttons">
+			              <label class="btn btn-default" onclick="crl.set({ cycle : false });">
+			                <input type="radio" name="vertical"> NO
+			              </label>
+			              <label class="btn btn-default active" onclick="crl.set({ cycle : true });">
+			                <input type="radio" name="vertical" checked> Yes
+			              </label>
+			            </div>
+			          </p>
+			        </div>
+			        <div class="col-sm-3 text-center">
+			          <h4>反转</h4>
+			          <p>
+			            <div class="btn-group" data-toggle="buttons">
+			              <label class="btn btn-default active" onclick="crl.set({ reverse : false });">
+			                <input type="radio" name="vertical" checked> NO
+			              </label>
+			              <label class="btn btn-default" onclick="crl.set({ reverse : true });">
+			                <input type="radio" name="vertical"> Yes
+			              </label>
+			            </div>
+			          </p>
+			        </div>
+			        <div class="col-sm-6 text-center">
+			          <h4>方向</h4>
+			          <p>
+			            <div class="btn-group" data-toggle="buttons">
+			              <label class="btn btn-default active" onclick="crl.set({ vertical : false });">
+			                <input type="radio" name="vertical" checked> 水平
+			              </label>
+			              <label class="btn btn-default" onclick="crl.set({ vertical : true });">
+			                <input type="radio" name="vertical"> 垂直
+			              </label>
+			            </div>
+			          </p>
+			        </div>
+			        <div class="col-sm-4 text-center">
+			          <h4>动画旋转</h4>
+			          <p>
+			            <a href="#" class="btn btn-default" onclick="crl.turn(9); return false;">第10帧</a>
+			            <a href="#" class="btn btn-default" onclick="crl.turn(0); return false;">第1帧</a>
+			          </p>
+			        </div>
+			        <div class="col-sm-4 text-center">
+			          <h4>显示</h4>
+			          <p>
+			            <a href="#" class="btn btn-default" onclick="crl.go(9); return false;">第10帧</a>
+			            <a href="#" class="btn btn-default" onclick="crl.go(0); return false;">第1帧</a>
+			          </p>
+			        </div>
+			        <div class="col-sm-4 text-center">
+			          <h4>自动播放</h4>
+			          <p>
+			            <a href="#" class="btn btn-default" onclick="crl.play(); return false;">开始</a>
+			            <a href="#" class="btn btn-default" onclick="crl.stop(); return false;">停止</a>
+			          </p>
+			        </div>
+				</div>
+			</div>
+		</div>
+		<div class="related">
+		    <h3>如果你喜欢这个插件，那么你可能也喜欢:</h3>
+		    <a href="http://www.htmleaf.com/jQuery/Image-Effects/20141230998.html">
+			  <img src="related/1.jpg" width="300" alt="jQuery炫酷iPhone手机3D旋转互动特效"/>
+			  <h3>jQuery炫酷iPhone手机3D旋转互动特效</h3>
+			</a>
+			<a href="http://www.htmleaf.com/css3/css3donghua/20141021255.html">
+			  <img src="related/2.jpg" width="300" alt="html5纯css3带自动视频播放的iPhone4手机360度旋转展示"/>
+			  <h3>html5纯css3带自动视频播放的iPhone4手机360度旋转展示</h3>
+			</a>
+		</div>
+	</div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/circlr.min.js"></script>
+
+	<script type="text/javascript">
+	    var crl = circlr('circlr', {
+	      scroll : true,
+	      loader : 'loader'
+	    });
+	</script>
+</body>
+</html>

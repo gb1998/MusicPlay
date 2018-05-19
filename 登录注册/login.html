@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>欢迎登陆!</title>
+		<link rel="stylesheet" href="login.css" type="text/css" />
+	</head>
+
+	<body background="../MusicPlay/bg.jpeg">
+		<div id="myDiv" >
+			<nav id="myNav">
+				<div id="login"><p>登录</p></div>
+				<div id="register"><p><a href="register.html">注册</a></p></div>
+			</nav>
+			<form id="myForm">
+				<div id="div1"></div>
+				<div id="usernameDiv">
+					<span class="s">账号：</span>
+					<input type="text" id="username" placeholder="请输入账号" />
+					<span class="spanStyle" id="usernameSpan">*</span>
+				</div>
+				
+				<div id="passwordDiv">
+					<span class="s">密码：</span>
+					<input type="password" id="password" placeholder="请输入密码" />
+					<span class="spanStyle" id="passwordSpan">*</span>
+				</div>
+				
+				<div id="vercodeDiv">
+					<span class="s">验证码：</span>
+					<input type="text" id="vercode" placeholder="请输入验证码" />
+					<span class="spanStyle" id="vercodeSpan">*</span>
+				</div>
+				
+				<div id="submitDiv">
+					<input id="user" type="button" value="用户登录" />
+					<input id="visitor" type="button" value="游客登录" />
+				</div>	
+			</form>
+		</div>
+		<script type="text/javascript" src="login.js"></script>
+	</body>
+
+</html>

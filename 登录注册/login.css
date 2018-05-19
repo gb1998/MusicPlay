@@ -1,0 +1,163 @@
+body {
+	background-color: #000000;
+	background-repeat:no-repeat;
+	background-size:1000px 800px;
+}
+/*页面总体的颜色设置*/
+
+a {
+	text-decoration: none;
+	color: black;
+}
+/*取消链接的下划线和加粗字体*/
+
+#login {
+	float: left;
+	height: 50px;
+	background: transparent;
+	width: 65px;
+	border-radius:25px ;
+	border: 1px solid #white;
+}
+#register {
+	float: left;
+	height: 50px;
+	
+	background: transparent;
+	width: 65px;
+	border-radius:25px ;
+	border: 1px solid #white;
+	
+}
+/*设置登录注册的div总样式*/
+#login p {
+	font-family: "微软雅黑";
+	font-style: italic;
+	text-decoration: underline;
+	font-size: larger;
+	color: #FF0000;
+	position: relative;
+	top: -8px;
+	left: 15px;
+}
+
+#register p {
+	font-family: "微软雅黑";
+	font-size: large;
+	position: relative;
+	top: -8px;
+	left: 15px;
+}
+/*对登录注册div里面的p进行样式修改*/
+#register a:hover {
+	font-size: larger;
+	color: #FF0000;
+}
+#register:hover {
+	background-color: cornsilk;
+}
+/*添加浮动效果，可用js代替*/
+
+#myDiv {
+	top: 120px;
+	position: relative;
+	margin: auto auto auto auto;/*居中效果*/
+	/*background-color: darkgray;*/
+	background-color: transparent;
+	width: 600px;
+	height: 700px;
+}
+/*登录的总体框架设置，距离顶部的距离、相对定位、居中、背景颜色、高度和宽度*/
+
+#myForm {
+	position: relative;
+	top: 30px;
+	margin: auto auto auto auto;
+	/*background-color: blanchedalmon;*/
+	width: 550px;
+	height: 500px;
+}
+/*登录的表单设置，相对定位、与上面的距离、居中、背景颜色、宽度高度*/
+
+#myNav {
+	position: relative;
+	margin: auto auto auto auto;
+	top: 3.5em;
+	/*background-color: #CCCCCC;*/
+	width: 150px;
+	height: 50px;
+}
+
+#div1 {
+	width: 100px;
+	height: 100px;
+}
+/*用来调整样式用的，没有什么用*/
+#usernameDiv,#passwordDiv,#vercodeDiv {
+	border-radius:20px;
+	background: transparent;
+	height: 34px;
+	border: 1px solid #CCCCCC;
+}
+/*对各个div 的大体设置*/
+#passwordDiv,#vercodeDiv {
+	margin-top: 80px;
+}
+/*对个别div的高度距离调整*/
+#usernameDiv input,#passwordDiv input,#vercodeDiv input {
+	padding-left: 8px;
+	margin-left: 50px;
+	width: 190px;
+	height: 28px;
+	border: 1px solid black;
+	font-size: 20px;
+}
+/*对输入框中的样式进行设置*/
+#vercodeDiv input {
+	margin-left: 32px;
+}
+/*个别左边距离矫正*/
+#submitDiv {
+	margin-top: 80px;
+}
+/*对提交按钮div的距离设置*/
+#submitDiv input {
+	font-family:  "微软雅黑";
+	font-size: large;
+	font-style: bold;
+	color: black;
+	background: transparent;
+	border-radius:20px;
+	border:1px solid white;
+	width: 100px;
+	height: 50px;
+}
+/*对提交按钮div的具体设置*/
+
+#user,#visitor {
+	margin-left: 100px;
+	border: none;
+}
+#visitor:hover,#user:hover {
+	background-color: black;
+	font-size: larger;
+	font-style: bold;
+	text-decoration: underline;
+	color: white;
+}
+/*对提交按钮的设置*/
+
+.s {
+	margin-left: 60px;
+	font-family: "微软雅黑";
+	font-size: large;
+}
+/*对span中的字体的设置*/
+
+.spanStyle {
+	color: red;
+	font-family: "微软雅黑";
+	font-size: larger;
+}
+
+/*修改后面*的颜色来确认正确错误*/
