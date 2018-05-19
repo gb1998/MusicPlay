@@ -4,7 +4,8 @@
 异步搜索歌曲链接并添加播放（原生态js异步调用网易云根据关键字匹配歌曲链接的接口）目前该接口因版权部分歌曲链接失效                                                                                   
 网易云音乐接口：http://s.music.163.com/search/get/                                              
 如曹操这首歌的链接为http://s.music.163.com/search/get/?type=1&limit=1&s=%E6%9B%B9%E6%93%8D                            
-返回的json 数据格式如下：                                                                            
+返回的json 数据格式如下： 
+![image](https://github.com/gb1998/MusicPlay/blob/master/img/%E6%88%AA%E5%9B%BE%202018-05-19%2023.31.11-fullpage.png)
 参数                                                                                                         
 var data = {                                   
 			"type": 1,//单曲                               
@@ -90,7 +91,11 @@ var data = {
 		 alert(string);
 
 		};
-
-
+网站效果图：
+![image](https://github.com/gb1998/MusicPlay/blob/master/img/%E6%88%AA%E5%9B%BE%202018-05-19%2022.30.49-fullpage.png)
+歌词：
+![image](https://github.com/gb1998/MusicPlay/blob/master/img/%E6%88%AA%E5%9B%BE%202018-05-19%2022.31.57-fullpage%20(1).png)
 最后还有响应式布局：
 
+![image](https://github.com/gb1998/MusicPlay/blob/master/img/%E6%88%AA%E5%9B%BE%202018-05-19%2022.41.07.png)                                          
+挺有意思挺好玩的项目强烈推荐会让你对js产生浓浓的兴趣~~~~哈哈哈
